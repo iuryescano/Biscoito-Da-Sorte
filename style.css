@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color :linear-gradient( to right, #190361, #BB00FF);
+  --text-color: hsl(238, 27%, 28%, 100%);
+  --block-color: #E6E6E6;
+
+  font-size: 62.5%;
+}
+
+body{
+  background: var(--bg-color);
+}
+
+#app {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+.home {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42.8rem;
+  height: 42.8rem;
+  border-radius: 5px;
+  border-color: var(--block-color);
+  border-bottom: none;
+  background-color: var(--block-color);
+  font-family: 'Montserrat', sans-serif;
+  flex-direction: column;
+  
+
+}
+
+#primarybox{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1.4rem;
+  text-align: center;
+}
+
+#secondbox {
+  font-size: 15px;
+  font-weight: regular;
+  font-family: 'DM Sans', sans-serif;
+  padding: 2rem;
+}
+
+#tertiarybox {
+  margin-right: 4rem;
+}
