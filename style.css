@@ -7,7 +7,7 @@
 :root {
   --bg-color :linear-gradient( to right, #190361, #BB00FF);
   --text-color: hsl(238, 27%, 28%, 100%);
-  --block-color: #E6E6E6;
+  --block-color: #FFFFFF;
 
   font-size: 62.5%;
 }
@@ -22,7 +22,7 @@ body{
   place-content: center;
 }
 
-.home {
+.screen1 {
   border: 1px solid;
   display: flex;
   justify-content: center;
@@ -39,6 +39,32 @@ body{
 
 }
 
+.screen2 {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42.8rem;
+  height: 56.4rem;
+  border-radius: 5px;
+  border-color: var(--block-color);
+  border-bottom: none;
+  background-color: var(--block-color);
+  font-family: 'Montserrat', sans-serif;
+  flex-direction: column;
+}
+
+.boxMensager {
+  width: 29.3rem;
+  height: 10.7rem;
+  border: 1px ;
+  background-color: #E4EDF1;
+  border-color: #E4EDF1;
+  text-align: center;
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(0 0 0 / 90%)); 
+  filter: drop-shadow(0px 0px 8px rgba(0 0 0 / 90%));
+}
+
 #primarybox{
   font-size: 24px;
   font-weight: bold;
@@ -46,13 +72,89 @@ body{
   text-align: center;
 }
 
+#primarybox2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1.4rem;
+  text-align: center;
+  margin-top: -8rem;
+
+}
+
+
 #secondbox {
   font-size: 15px;
   font-weight: regular;
   font-family: 'DM Sans', sans-serif;
   padding: 2rem;
+  
+}
+
+#secondbox2{
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding: 2rem;
+  font-family: 'Dancing Script', sans-serif;
+  margin-top: 1rem;
+  animation: fade_in_1 1s;
+}
+
+
+@keyframes fade_in_1 {
+  0%, 10% {
+    opacity: 0;
+    transform: translateY(8rem) scale(0);
+  }
+  30%, 100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 #tertiarybox {
   margin-right: 4rem;
+}
+
+#tertiarybox2 {
+  margin-right: 4rem;
+}
+
+.hide{
+  display: none;
+}
+
+button {
+  border:none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.CookieBroken {
+  margin-left: 6rem;
+  margin-top: -0.5rem;
+}
+
+.otherTry {
+  background-color: #FF9500;
+  text-align: center;
+  cursor: pointer;
+  height: 5rem;
+  width: 17rem;
+  border-radius: 4px;
+  font-weight: bold;
+  color:white;
+  font-family: 'DM Sans', sans-serif;
+}
+
+#buttonCookie:focus {
+  animation: treme 0.1s;
+  animation-iteration-count: 3;
+}
+
+@keyframes treme {
+  0% {margin-left: 0;}
+  25% {margin-left: 5px;}
+  50% {margin-left: 0;}
+  75% {margin-left: -5px;}
+  100% {margin-left: 0;}
 }
